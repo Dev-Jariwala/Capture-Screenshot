@@ -1,0 +1,155 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+body{
+  background-color: #B9E0FF;
+}
+.container{
+  background-color: #fff;
+  width: 80%;
+  margin: 50px auto 130px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 10px 2px grey;
+  border-radius: 10px;
+
+}
+.banner{
+  display: flex;
+  justify-content: center;
+}
+.banner img{
+  border-radius: 20px;
+  width: 90%;
+
+}
+.start{
+  width: 80%;
+}
+.resource, .work{
+  width: 80%;
+  /* margin: auto; */
+}
+.resource{
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.work{
+  /* background-color: grey; */
+  /* line-height: 40px; */
+}
+
+@media (max-width: 1050px){
+  .scroll{
+    display: flex;
+    overflow-x: auto;
+  }
+}
+@media (max-width: 460px) {
+
+  .data p img{
+  width: 90%;
+  }
+  .work{
+    font-size: 0.6rem;
+  }
+  .resource{
+    font-size: 0.65rem;
+  }
+  .container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .work p a img{
+    width: 25px;
+    margin: auto 5px;
+  }
+  .scroll p a img{
+    width: 500px;
+  }
+  .btn{
+    font-size: 0.5rem;
+  }
+}
+@media (min-width: 460px) and (max-width: 720px) {
+
+  .data p img{
+  width: 90%;
+  }
+  .work{
+    font-size: 0.75rem;
+  }
+  .resource{
+    font-size: 0.8rem;
+  }
+  .container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .work p a img{
+    width: 35px;
+    margin: auto 5px;
+  }
+  .scroll p a img{
+    width: 500px;
+  }
+  .btn{
+    font-size: 0.65rem;
+  }
+}
+.btn{
+  position: fixed;
+  bottom: 50px;
+  border: none;
+  outline: none;
+  background-color: #7286fb;
+  padding: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  box-shadow: 1px 1px 10px grey;
+}
+.btn:hover{
+  background-color: #4a61e9;
+}
+.src-preview{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.65);
+}
+.src-preview.show{
+  display: block;
+}
+.src-preview .screenshot{
+  /* background: #fff; */
+  width: 70%;
+  aspect-ratio: 16 / 9;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.screenshot img{
+  width: 100%;
+}
+.screenshot #close-btn{
+  position: absolute;
+  right: -25px;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
